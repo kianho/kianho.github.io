@@ -1,7 +1,10 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
+
+      {% comment %}
       <img class="avatar" src="{{site.base.url}}/{{ site.avatar }}" />
+      {% endcomment %}
 
       <h1>
         <a href="{{ site.baseurl }}">
@@ -32,7 +35,10 @@
 
       <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
+
+      {% comment %}
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+      {% endcomment %}
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
